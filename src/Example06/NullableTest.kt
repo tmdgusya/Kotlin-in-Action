@@ -16,6 +16,6 @@ fun sendToEmail(email: String) {
 fun main(args: Array<String>) {
     println(strLen(null))
 
-    var email: String? = ""
-    sendToEmail(email);
+    var email: String? = null
+    email?.let { sendToEmail(email) }
 }
