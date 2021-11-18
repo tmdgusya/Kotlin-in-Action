@@ -9,6 +9,13 @@ fun strLen(s: String?): Int {
     return string.length
 };
 
+fun sendToEmail(email: String) {
+    println("SEND TO $email")
+}
+
 fun main(args: Array<String>) {
     println(strLen(null))
+
+    var email: String? = ""
+    sendToEmail(email);
 }
